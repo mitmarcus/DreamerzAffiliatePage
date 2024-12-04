@@ -1,14 +1,21 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/navbar";
+import AffiliateSection from "@/components/affiliatesection";
+import FeaturesSection from "@/components/featuressection";
+import AffiliateSteps from "@/components/affiliatesteps";
+import AffiliateCTA from "@/components/affiliatecta";
+import Footer from "@/components/footer";
+import FAQSection from "@/components/faqsection";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+const SpaceGroteskSans = localFont({
+  src: "./fonts/SpaceGrotesk-VariableFont_wght.ttf",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
+const SpaceGroteskMono = localFont({
+  src: "./fonts/SpaceGrotesk-VariableFont_wght.ttf",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
@@ -26,8 +33,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${SpaceGroteskSans.variable} ${SpaceGroteskMono.variable} antialiased`}
       >
+        <Navbar />
+        <AffiliateSection />
+        <FeaturesSection />
+        <AffiliateSteps />
+        <AffiliateCTA />
+        <FAQSection />
+        <Footer />
         {children}
       </body>
     </html>
