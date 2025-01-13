@@ -95,8 +95,8 @@ export default function AffiliateSteps() {
                 <path
                   d="M2 13V13C69.481 -0.858773 139.058 -1.02214 206.604 12.5196L209 13"
                   stroke="#EBBFFF"
-                  stroke-width="3"
-                  stroke-dasharray="13 13"
+                  strokeWidth="3"
+                  strokeDasharray="13 13"
                 />
               </svg>
             </div>

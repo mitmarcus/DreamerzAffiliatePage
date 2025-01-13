@@ -35,7 +35,7 @@ export default function FeaturesSection() {
 
           {/* Right Section */}
           <div className="relative flex-1 max-w-md">
-            <div className="absolute -top-4 right-0 w-full h-full transform rotate-[-3deg] rounded-xl bg-gradient-to-tr from-purple-100 to-yellow-100 shadow-md"></div>
+            <div className="absolute -top-4 right-0 w-full h-full transform rotate-[-3deg] rounded-xl bg-linear-to-tr from-purple-100 to-yellow-100 shadow-md"></div>
             <img
               src="https://via.placeholder.com/300x200"
               alt="Help Others"
@@ -55,14 +55,14 @@ export default function FeaturesSection() {
 
           {/* Image Card */}
           <div className="relative w-full max-w-sm">
-            <div className="absolute inset-0 -rotate-[2deg] bg-gradient-to-tr from-purple-100 to-purple-200 rounded-lg shadow-md"></div>
+            <div className="absolute inset-0 -rotate-[2deg] bg-linear-to-tr from-purple-100 to-purple-200 rounded-lg shadow-md"></div>
             <div className="relative bg-white rounded-lg overflow-hidden shadow-lg">
               <img
                 src="https://via.placeholder.com/300x200"
                 alt="Florence"
                 className="w-full h-32 object-cover"
               />
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow">
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-sm">
                 <img
                   src="https://via.placeholder.com/64"
                   alt="Inger Kristiansen"
