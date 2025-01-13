@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import AffiliateSection from "@/components/affiliatesection";
@@ -8,17 +7,9 @@ import AffiliateSteps from "@/components/affiliatesteps";
 import AffiliateCTA from "@/components/affiliatecta";
 import Footer from "@/components/footer";
 import FAQSection from "@/components/faqsection";
+import { Space_Grotesk } from "next/font/google";
 
-const SpaceGroteskSans = localFont({
-  src: "./fonts/SpaceGrotesk-VariableFont_wght.ttf",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const SpaceGroteskMono = localFont({
-  src: "./fonts/SpaceGrotesk-VariableFont_wght.ttf",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const spacegrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -32,9 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${SpaceGroteskSans.variable} ${SpaceGroteskMono.variable} antialiased`}
-      >
+      <body className={`${spacegrotesk} antialiased`}>
         <Navbar />
         <AffiliateSection />
         <FeaturesSection />

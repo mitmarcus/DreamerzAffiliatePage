@@ -10,14 +10,16 @@ import {
 export default function FAQSection() {
   return (
     <section className="py-28 px-16 bg-white">
-      <div className="max-w-4xl mx-auto">
+      <div className=" mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           <div className="text-center mb-8 grid-cols-1">
-            <h2 className="text-4xl font-bold text-left">
-              Frequently Asked Questions
+            <h2 className="title text-left">
+              Frequently Asked <br />
+              Questions
             </h2>
-            <p className="text-gray-600 mt-2 text-left">
-              Find answers to common questions about our affiliate program.
+            <p className="subtitle text-left">
+              Find answers to common questions about our <br />
+              affiliate program.
             </p>
           </div>
           <Accordion type="single" collapsible className="space-y-4">

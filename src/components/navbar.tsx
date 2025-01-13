@@ -18,12 +18,14 @@ export default function Navbar() {
       <div className="flex items-center space-x-4">
         <div className="space-x-1 my-2">
           <Button variant="default">Join Affiliate</Button>
-          <Button variant="outline">Dashboard Login</Button>
+          <Button variant="outline" className="hidden sm:inline-block">
+            Dashboard Login
+          </Button>
         </div>
         <Avatar>
           <AvatarImage
             className="h-12 w-12"
-            src="https://via.placeholder.com/150"
+            src="images/pfp.jpeg"
             alt="User Avatar"
           />
         </Avatar>

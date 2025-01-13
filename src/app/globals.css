@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
 }
 
 @layer base {
@@ -67,10 +67,24 @@ body {
 @layer base {
   * {
     @apply border-border;
+    @apply text-[16px] leading-[150%];
   }
   body {
     @apply bg-background text-foreground;
   }
+
+  .hero {
+    @apply text-[56px] font-medium tracking-[-0.02em] leading-[110%];
+  }
+
+  .title {
+    @apply text-[40px] font-medium tracking-[-0.02em] leading-[120%];
+  }
+
+  .subtitle {
+    @apply text-[18px] font-normal leading-[150%] text-[#333333];
+  }
+
   .gradient1 {
     border: 1px solid;
     background-image: var(--gradient1);

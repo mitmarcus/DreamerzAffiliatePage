@@ -6,14 +6,15 @@ import { ChevronRight } from "lucide-react";
 
 export default function FeaturesSection() {
   return (
-    <section className="py-24 px-16 bg-gradient-to-br from-white to-yellow-100">
+    <section className="py-24 px-16 bg-white">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold">Dream Big, Achieve More</h2>
-        <p className="text-gray-600 mt-2">
+        <h2 className="title">Dream Big, Achieve More</h2>
+        <p className="subtitle mt-2">
           Unlock the power of dreaming with Dreamerz platform
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mx-auto">
         <Card className="p-8 bg-white shadow-md rounded-xl flex items-center col-span-2 gap-8">
           {/* Left Section */}
           <div className="flex-1">
