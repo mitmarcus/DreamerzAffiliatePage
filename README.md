@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Affiliate page Demo for Dreamerz
 
-## Getting Started
+This project was created to show an investor a quick demo on his devices, developed in collaboration with a talented designer.
 
-First, run the development server:
+[Visit the demo](https://dreamerz-affiliate-page.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Key Takeaways
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Tailwind CSS 4**: I love it. The new features are really cool. It was in Beta during this project but gradient styling is very appreciated.
+- **AI Tools**: I wanted to see if it would save time since the project is just "a landing page". What I discovered is while AI tools are beneficial when truly stuck, they're not a catch-all solution yet. I would refrain from using AI as a holistic solution. In such a small project it created more problems than solved.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Areas for Improvement
+Reflecting on this demo, here are some aspects that could be improved:
 
-## Learn More
+1. **Code Organization**: Splitting the code into smaller, more manageable components would enhance maintainability and readability.
+2. **Naming Conventions**: Adopting a more consistent and intuitive naming scheme would make the codebase easier to understand and work with.
+3. **Defining Brand Colors Early**: Establishing a clear palette of "brand" colors at the beginning of the project would ensure a cohesive and consistent visual identity.
 
-To learn more about Next.js, take a look at the following resources:
+## Design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Desktop - Affiliate](https://github.com/user-attachments/assets/7b3e67c5-e90e-4967-b875-7a369b557e26)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
