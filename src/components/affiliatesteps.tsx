@@ -5,7 +5,7 @@ import { ArrowRight, Share2, DollarSign, TrendingUp } from "lucide-react";
 
 export default function AffiliateSteps() {
   return (
-    <section className="py-28 px-16 bg-white">
+    <section className="pt-20 pb-40 px-16 bg-white">
       <div className="flex flex-col items-center gap-8">
         <div className="text-center">
           <h1 className="title ">Make dreams come true and earn!</h1>
@@ -15,7 +15,7 @@ export default function AffiliateSteps() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-16 relative w-full ">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-16 relative w-full pt-7">
           {/* Card 1 */}
           <div className="relative flex flex-col items-center">
             <Card className="text-center border-0 p-6 bg-transparent shadow-none">
@@ -26,7 +26,7 @@ export default function AffiliateSteps() {
                 link
               </span>
             </Card>
-            {/* Line to next card */}
+            {/* Line to next card
             <div className="hidden sm:block absolute top-6 left-40 transform translate-x-1/2">
               <svg
                 width="210"
@@ -42,7 +42,7 @@ export default function AffiliateSteps() {
                   strokeDasharray="13 13"
                 />
               </svg>
-            </div>
+            </div> */}
           </div>
 
           {/* Card 2 */}
@@ -55,7 +55,7 @@ export default function AffiliateSteps() {
               </span>
             </Card>
             {/* Line to next card */}
-            <div className="hidden sm:block absolute top-6 left-[70px] transform translate-x-1/2">
+            {/* <div className="hidden sm:block absolute top-6 left-[70px] transform translate-x-1/2">
               <svg
                 width="210"
                 height="15"
@@ -70,7 +70,7 @@ export default function AffiliateSteps() {
                   strokeDasharray="13 13"
                 />
               </svg>
-            </div>
+            </div> */}
           </div>
 
           {/* Card 3 */}
@@ -84,7 +84,7 @@ export default function AffiliateSteps() {
               </span>
             </Card>
             {/* Line to next card */}
-            <div className="hidden sm:block absolute top-6 left-[70px] transform translate-x-1/2 ">
+            {/* <div className="hidden sm:block absolute top-6 left-[70px] transform translate-x-1/2 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="210"
@@ -99,7 +99,7 @@ export default function AffiliateSteps() {
                   strokeDasharray="13 13"
                 />
               </svg>
-            </div>
+            </div> */}
           </div>
 
           {/* Card 4 */}

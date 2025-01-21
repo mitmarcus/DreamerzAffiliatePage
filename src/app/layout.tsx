@@ -1,12 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/navbar";
-import AffiliateSection from "@/components/affiliatesection";
-import FeaturesSection from "@/components/featuressection";
-import AffiliateSteps from "@/components/affiliatesteps";
-import AffiliateCTA from "@/components/affiliatecta";
+
 import Footer from "@/components/footer";
-import FAQSection from "@/components/faqsection";
 import { Space_Grotesk } from "next/font/google";
 
 const spacegrotesk = Space_Grotesk({ subsets: ["latin"] });
@@ -25,13 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${spacegrotesk} antialiased`}>
         <Navbar />
-        <AffiliateSection />
-        <FeaturesSection />
-        <AffiliateSteps />
-        <AffiliateCTA />
-        <FAQSection />
-        <Footer />
         {children}
+        <Footer />
       </body>
     </html>
   );

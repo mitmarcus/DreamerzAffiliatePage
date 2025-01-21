@@ -5,7 +5,7 @@ import { Avatar, AvatarImage } from "@/components/ui/avatar";
 
 export default function AffiliateSection() {
   return (
-    <section className="flex flex-col items-center justify-center text-center py-28 px-16 bg-linear-to-tr from-green-100 via-blue-50 to-purple-100">
+    <section className="flex flex-col items-center justify-center text-center py-28 px-16 bg-linear-135 from-[#84FAD5]/10 via-[#EBBFFF]/10 to-[#F6EC85]/10">
       <div className="flex items-center space-x-4 mb-5">
         <div className="flex items-center space-x-2">
           <div className="flex -space-x-4">
@@ -35,6 +35,13 @@ export default function AffiliateSection() {
                 className="w-10 h-10 object-cover rounded-full border-2 border-white"
                 src="images/avatar4.png"
                 alt="User 4"
+              />
+            </Avatar>
+            <Avatar>
+              <AvatarImage
+                className="w-10 h-10 object-cover rounded-full border-2 border-white"
+                src="images/avatar5.png"
+                alt="User 5"
               />
             </Avatar>
           </div>

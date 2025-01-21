@@ -1,8 +1,9 @@
-"use client";
+<Card className="shadow-md rounded-xl flex col-span-2"></Card>;
 
 import { Card } from "@/components/ui/card";
 import { Button } from "./ui/button";
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 export default function FeaturesSection() {
   return (
@@ -14,38 +15,37 @@ export default function FeaturesSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mx-auto">
-        <Card className="p-8 bg-white shadow-md rounded-xl flex items-center col-span-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mx-auto">
+        <Card className="shadow-md rounded-xl flex md:col-span-2 gap-8">
           {/* Left Section */}
-          <div className="flex-1">
-            <h3 className="text-lg text-purple-500 font-semibold">Inspire</h3>
+          <div className="flex-1 p-8 md:pr-0 flex flex-col justify-between items-start ">
+            <h3 className="text-lg text-[#EBBFFF] font-semibold">Inspire</h3>
             <h2 className="text-2xl font-bold mt-2">
               Make a Difference in Someone&apos;s Life Today
             </h2>
             <p className="text-gray-600 mt-4">
               Become an affiliate and make a positive impact
             </p>
-            <Button
-              variant="link"
-              className="text-purple-500 mt-6 flex items-center gap-2"
-            >
+            <Button variant="link" className="mt-6 flex pl-0 gap-2 text-lg">
               Join Now <ChevronRight />
             </Button>
           </div>
 
           {/* Right Section */}
-          <div className="relative flex-1 max-w-md">
-            <div className="absolute -top-4 right-0 w-full h-full transform rotate-[-3deg] rounded-xl bg-linear-to-tr from-purple-100 to-yellow-100 shadow-md"></div>
-            <img
-              src="https://via.placeholder.com/300x200"
-              alt="Help Others"
-              className="relative w-full h-auto rounded-xl object-cover"
+          <div className="hidden flex-2 md:flex justify-end items-end">
+            <Image
+              src="/images/Card1.png"
+              alt="Inspire"
+              width={500}
+              height={500}
+              layout="responsive"
             />
           </div>
         </Card>
-        <Card className="p-8 bg-white shadow-md rounded-xl flex flex-col items-start gap-6">
+
+        <Card className="shadow-md rounded-xl flex flex-col col-span-1 items-start gap-6">
           {/* Header */}
-          <div>
+          <div className="flex-1 p-8 pb-0">
             <h3 className="text-lg text-purple-500 font-semibold">Support</h3>
             <h4 className="text-2xl font-bold">Help Others Achieve</h4>
             <p className="text-gray-600 mt-2">
@@ -53,39 +53,21 @@ export default function FeaturesSection() {
             </p>
           </div>
 
-          {/* Image Card */}
-          <div className="relative w-full max-w-sm">
-            <div className="absolute inset-0 -rotate-[2deg] bg-linear-to-tr from-purple-100 to-purple-200 rounded-lg shadow-md"></div>
-            <div className="relative bg-white rounded-lg overflow-hidden shadow-lg">
-              <img
-                src="https://via.placeholder.com/300x200"
-                alt="Florence"
-                className="w-full h-32 object-cover"
-              />
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-16 h-16 rounded-full border-4 border-white overflow-hidden shadow-sm">
-                <img
-                  src="https://via.placeholder.com/64"
-                  alt="Inger Kristiansen"
-                  className="w-full h-full object-cover rounded-full"
-                />
-              </div>
-              <div className="p-4 text-center">
-                <h5 className="text-lg font-semibold">Inger Kristiansen</h5>
-                <p className="text-gray-600 text-sm">
-                  My dream is to buy some tickets to Florence for a weekend!
-                </p>
-                <div className="mt-4 flex justify-between text-gray-600 text-sm">
-                  <span>Scope</span>
-                  <span className="font-bold text-black">200$</span>
-                </div>
-              </div>
-            </div>
+          {/* Right Section */}
+          <div className="flex-1 px-6 h-full justify-end items-end">
+            <Image
+              src="/images/Card2.png"
+              alt="Earn"
+              width={500}
+              height={500}
+              layout="responsive"
+            />
           </div>
         </Card>
 
-        <Card className="p-8 bg-white shadow-md rounded-xl flex flex-col gap-6">
+        <Card className="shadow-md rounded-xl flex flex-col col-span-1 gap-6">
           {/* Header Section */}
-          <div>
+          <div className="flex-1 p-8 pb-0">
             <h3 className="text-lg text-purple-500 font-semibold">Earn</h3>
             <h4 className="text-2xl font-bold mt-2">Grow Your Earnings</h4>
             <p className="text-gray-600 mt-2">
@@ -93,32 +75,15 @@ export default function FeaturesSection() {
             </p>
           </div>
 
-          {/* Dream Card */}
-          <div className="relative w-full max-w-md">
-            <div className="relative bg-white rounded-lg overflow-hidden shadow-lg">
-              <div className="p-4 flex items-center gap-4">
-                <img
-                  src="https://via.placeholder.com/48"
-                  alt="Adriana Lima"
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <h5 className="text-sm font-semibold">Adriana Lima</h5>
-                  <span className="text-xs text-gray-500">3 hours ago</span>
-                </div>
-              </div>
-              <img
-                src="https://via.placeholder.com/300x200"
-                alt="Grow Earnings"
-                className="w-full h-32 object-cover"
-              />
-              <div className="p-4">
-                <p className="text-sm text-gray-600">
-                  My dream is to own a MacBook for my studies at Harvard. As I
-                  will start this...
-                </p>
-              </div>
-            </div>
+          {/* Right Section */}
+          <div className="flex-1 h-full justify-end items-end px-6">
+            <Image
+              src="/images/Card3.png"
+              alt="Inspire"
+              width={500}
+              height={500}
+              layout="responsive"
+            />
           </div>
         </Card>
       </div>
