@@ -45,7 +45,7 @@ export default function FAQSection() {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="can-track-earnings">
-              <AccordionTrigger>Can I track my earnings?</AccordionTrigger>
+              <AccordionTrigger>Can I track earnings?</AccordionTrigger>
               <AccordionContent>
                 Absolutely! We provide a user-friendly dashboard where you can
                 monitor your earnings in real-time. You&apos;ll have access to

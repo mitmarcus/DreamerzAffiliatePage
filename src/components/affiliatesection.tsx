@@ -47,10 +47,13 @@ export default function AffiliateSection() {
           </div>
         </div>
 
-        <span className="text-sm text-gray-500">
+        <span className="text-sm text-gray-500 hidden md:block">
           Used by 3000+ partners worldwide
         </span>
       </div>
+      <span className="text-sm text-gray-500 block md:hidden">
+        Used by 3000+ partners worldwide
+      </span>
       <h1 className="hero mt-6">
         Join the Dreamerz Affiliate Program <br /> and turn dreams into reality!
       </h1>
